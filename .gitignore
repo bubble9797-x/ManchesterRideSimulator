@@ -16,3 +16,5 @@ Tools/geo_pipeline/data/
 
 # Cesium for Unreal (1.4 GB, install per docs/PHOTOREAL_MAP.md)
 Plugins/CesiumForUnreal/
+
+cesium-request-cache.sqlite
