@@ -1,0 +1,18 @@
+# Unreal
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+*.sln
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+
+# Tests / tools build output
+Tests/SimTests/out/
+Tools/geo_pipeline/data/
+
+# Cesium for Unreal (1.4 GB, install per docs/PHOTOREAL_MAP.md)
+Plugins/CesiumForUnreal/

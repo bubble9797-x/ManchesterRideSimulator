@@ -1,0 +1,23 @@
+# Optional: start the server when the PC boots, with its console in a "screen" session.
+# 1. sudo apt install screen
+# 2. Change YOURUSER and the folder below, then:
+#      sudo cp manchesterride.service /etc/systemd/system/
+#      sudo systemctl daemon-reload
+#      sudo systemctl enable --now manchesterride
+# 3. Open the console any time with:  screen -r manchesterride   (leave it running: Ctrl+A then D)
+[Unit]
+Description=Manchester Ride server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=YOURUSER
+WorkingDirectory=/home/YOURUSER/manchesterride-server
+ExecStart=/usr/bin/screen -DmS manchesterride ./start.sh
+ExecStop=/usr/bin/screen -S manchesterride -X stuff "stop\r"
+TimeoutStopSec=15
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

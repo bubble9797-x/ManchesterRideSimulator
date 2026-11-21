@@ -1,0 +1,18 @@
+Photo textures in maps/ come from ambientCG (https://ambientcg.com), released under CC0 1.0
+(public domain). Downloaded 2026-11-13 at 2K (JPG); only the Color, NormalDX and Roughness maps are kept.
+
+  Bricks101            red brick walls
+  Bricks084            sandstone walls
+  Concrete034          render / concrete walls
+  CorrugatedSteel005   industrial cladding
+  Road008A             main roads, cycle lanes
+  Road013A             side streets (worn, cracked)
+  Concrete047A         pavements and urban ground (60 cm flags drawn in the shader)
+  PavingStones119      granite setts
+  Grass004             parks and verges
+  Ground106            woodland floor
+  Ground048            dirt paths
+  Gravel023            gravel tracks, railway ballast
+  Bark012              tree bark (downloaded, not used yet)
+
+Re-import with Tools/make_materials.bat (it runs Tools/import_textures.py first).
